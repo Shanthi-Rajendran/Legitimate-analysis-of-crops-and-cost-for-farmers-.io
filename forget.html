@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forget</title>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" type="text/css" href="style2.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+     background-image: url("login.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    table{
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+    a{
+        color:whitesmoke;
+        text-decoration: none;
+        font-size: 20px;
+    }
+        </style>
+    </head>
+    <body>
+        <form action="for_action.php" method="post" autocomplete="off">
+            <center><table>
+                    <tr><td colspan="3"><center>ACCOUNT DELETION<hr></center></td></tr>
+                <tr><td>ENTER USERNAME:</td>
+                  <td><input type="text" name="user" required/></td>  
+                </tr>
+                <tr><td>ENTER PHONE NUMBER:</td>
+                  <td><input type="tel" name="phone" maxlength="10" required></td>  
+                </tr>
+                <tr>
+                <td>
+                    SELECT THE QUESTION :
+                </td>
+                <td>
+                   <select name="question">
+                       <option value="Name of town where you were born" selected>Name of town where you were born</option>
+                       <option value="What was your childhood nickname?">What was your childhood nickname?</option>
+                       <option value="What is your favorite movie?">What is your favorite movie?</option>
+                       <option value="What was the name of the hospital where you were born?">What was the name of the hospital where you were born?</option>
+                       <option value="In what town was your first job?">In what town was your first job?</option>
+                       <option value="What is the name of your favorite childhood friend?">What is the name of your favorite childhood friend?</option>
+                </td>
+                <td>[note:choose the question which you have already <br>answered during new account creation]</td>
+            </tr>
+            <tr>
+                <td>
+                   ANSWER:
+                </td>
+                <td>
+                   <input type="text" name="answer" required>
+                </td>
+            </tr>
+            <tr><td></td><td><input type="reset" value="Reset"/><input type="submit" value="DELETE ACCOUNT"/></td><br><br><br><br></tr>
+            
+                <tr>
+                <td colspan="2"><center>
+                    <a href="start.php">---home---</a>
+                </td>
+            </tr><tr>
+                <td colspan="2"><center>or<br>
+                    <a href="login.php">---login---</a>
+                </td>
+            </tr></table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+     display: block;
+    margin: auto;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: left;
+    background-color: black;
+}
+.but{
+    z-index: 2;
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.but a{
+    background: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#FFF;
+    text-decoration: none;
+}
+.but p{
+  color:#FFF;  
+}
+table{
+    border-spacing: 5px;
+}
+body{
+    background-image: url("selling.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    color: white;
+    background: rgba(0,0,0,0.5);
+    text-decoration: none;
+    
+}
+a{
+    color: white;
+    background: rgba(0,0,0,0.5);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+}
+</style>
+</head>
+<body>
+<h1>Welcome,</h1> 
+<center>
+<table style="width:35%" align="center" cellspacing="35";>
+    <tr><td colspan="2"><h1><center>CHOOSE YOUR OPTION</h1></td></tr>
+     <tr>
+         <br><br><br>
+      <td>
+<div class="gallery">
+    
+   <img src="c.jpg" alt="cultivation" width="600" height="400">
+  
+  <div class="desc"><div class="but"><a href="cultivation.php" target="_self"><center>CULTIVATION</a><hr><p>It guides you to check whether the desired crop cultivation is possible for the given soil type,if yes,then it returns information about necessary rainfall and temperature  in order to grow the specified crop cultivated.</p></div>
+  </div></div>
+</td>
+<td>
+<div class="gallery">
+  
+    <img src="sell.jpg" alt="selling" width="600" height="400">
+ 
+    <div class="desc"><div class="but"><a href="selling module.html" target="_self"><center>SELLING</a><hr><p>It guides you to  get aware  of the crops absolute price as declared by the Government and so you could avoid intermediate persons for selling your crops.</p>
+        <br></div></div>
+</div>
+    </td></tr>
+</table>
+    <h2><a href = "logout.php">Sign Out</a></h2>
+</body>
+</html>

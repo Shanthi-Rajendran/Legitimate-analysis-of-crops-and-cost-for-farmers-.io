@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>Admin_Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <style>  
+    body{
+         background-image: url("admin.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        table,th,tr,td{
+           border: 1px solid white;
+            color: white;
+             background-color: rgba(0,0,0,0.5);
+             border-left: 5px;
+              border-collapse: collapse;
+              text-align: center;
+             }
+             a{
+                text-decoration: none;
+                color:white;
+             }
+      </style>             
+      </head>
+    <body>
+    <center><h1>WELCOME ADMIN!</h1>
+        <h2>(SELLING MODULE)<br>(INSERT,DELETE RECORDS)<h2>
+               <form method="POST" action="sell_update.php" autocomplete="OFF" style='text-transform:uppercase'>
+                <table width="100%">
+                <tr>
+                    <th colspan="2">ADD NEW CROP AND PRICE</td>
+                    <th colspan="2">DELETE CROP DETAILS</td>
+                </tr>
+                <tr>
+                    <td>ENTER CROP NAME:</td>
+                    <td><input type="text" name="s_crop" size="35"></td>
+                    <td rowspan="2">ENTER CROP NAME TO DELETE:</td>
+                    <td rowspan="2"><input type="text" name="s_crop" size="35"></td>
+                 </tr>
+                 <tr>
+                <td>ENTER COST PER KG:</td>
+        <td><input type="text" name="price" size="35" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" value="Reset"/><input type="submit" value="Insert" name="s1"/></td>
+                    <td colspan="2"><input type="reset" value="Reset"/><input type="submit" value="Delete record" name="s2"/></td>
+                 </tr>
+                 </table> </form>
+                <br><br><br><br><a href="start.html">HOME</a>
+                
+    </body>
+</html>

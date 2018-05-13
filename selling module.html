@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("selling.jpg");
+                background-repeat: no-repeat;
+            background-size: cover;
+            text-align: left; 
+            font-size: 100%;
+            }
+            table,h1{
+                background: rgba(0,0,0,0.5);
+                color:white;
+                }
+                
+            a{
+    color:white;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+}
+        </style>
+    </head>  
+  
+<body>
+<form action="selling_action.php" method="post">
+    <h1><center>SELLING</h1><br><br><br><br>
+   <table align="center">
+       <tr>
+           <td>SELECT CROP NAME:</td>
+           <td><select name=s_crop>
+  <option value="jute">Jute</option>
+  <option value="wheat">Wheat</option>
+  <option value="rice">Rice</option>
+  <option value="sugarcane">Sugarcane</option>
+  <option value="cotton">Cotton</option>
+  <option value="maize">Maize</option>
+  <option value="groundnut oilseed">Groundnut oilseed</option>
+  <option value="mustard oilseed">Mustard oilseed</option>
+  <option value="soyabean oilseed">Soyabean oilseed</option>
+  <option value="sunflower seed">Sunflower seed</option>
+   <option value="sesamum seed">Sesamum seed</option>
+  <option value="safflower seed">Safflower seed</option>
+  <option value="nigerseed">Nigerseed</option>
+   <option value="gram">Gram</option>
+  <option value="arhar/tur">Arhar/tur</option>
+  <option value="moong">Moong</option>
+   <option value="urad">Urad</option>
+  <option value="lentil">lentil</option>
+  
+</select>
+  </td>
+       </tr>
+       <tr>
+           <td>ENTER QUANTITY IN KGS:</td>
+           <td><input type="number" name="quantity" required></td>
+       </tr>
+       <tr><td></td>
+           <td><input type="reset" value="Reset"/>
+           <input type="submit" value="Submit"/></td>
+       </tr>
+    </table>
+</form> 
+<h4 style="text-align: center"><br><a href = "modules_page.html">Back to Cultivation/Selling</a><br><br><a href = "logout.php">Sign Out</a></h4>
+</body>
+</html>

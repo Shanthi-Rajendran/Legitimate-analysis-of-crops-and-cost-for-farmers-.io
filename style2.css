@@ -1,0 +1,12 @@
+.box {
+    width:350px;
+    height:250px;
+    background-color:rgba(0,0,0,0.4);
+    position:fixed;
+    margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:50%;
+    left:50%;
+    color:#fff;
+    
+}
